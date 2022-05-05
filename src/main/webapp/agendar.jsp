@@ -23,16 +23,16 @@
 	
 	</br>
 
-	<form method="POST" action="ServletAuth">
+	<form method="post" action="/ReservaHora3/ServletForm">
 	
 		<table width="350" border="1" cellpadding="4" cellspacing="0" bordercolor="#666666">
 		  <tr>
 		    <td>Id Mascota:</td>
-		    <td><input type="text" id="idMascota" name="txtidMascota" placeholder="id Mascota" required></td>
+		    <td><input type="number" id="idMascota" name="txtidMascota" placeholder="id Mascota" required></td>
 		  </tr>
 		  <tr>
 		    <td>Rut Dueño:</td>
-		    <td><input type="text" id="rutDueño" name="txtrutDueño" placeholder="Rut Dueño" required></td>
+		    <td><input type="number" id="rutDueño" name="txtrutDueno" placeholder="Rut Dueño" required></td>
 		  </tr>
 		  <tr>
 		    <td>Nombre Mascota:</td>
@@ -40,11 +40,11 @@
 		  </tr>
 		  <tr>
 		    <td>Hora:</td>
-		    <td><input type="date" id="hora" name="txthora" placeholder="Hora" required></td>
+		    <td><input type="time" id="hora" name="txthora" placeholder="Hora" required></td>
 		  </tr>
 		  <tr>
 		    <td>Fecha:</td>
-		    <td><input type="time" id="fecha" name="txtfecha" placeholder="Fecha" required></td>
+		    <td><input type="date" id="fecha" name="txtfecha" placeholder="Fecha" required></td>
 		  </tr>
 		  <tr>
 		    <td colspan="2"><input type="submit" id="registrar" name="registrar" value="Registrar"></td>

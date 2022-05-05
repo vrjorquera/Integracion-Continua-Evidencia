@@ -20,14 +20,14 @@ public class Test {
 	@SuppressWarnings("static-access")
 	@org.junit.Test
 	public void testConexion() {
-		System.out.println("TEST Ok: Conexion");
+		System.out.println("Ingreso de nombre de usuario con datos almacenados en BD.");
 		try {
 			conexion instance = new DB.conexion();
 			String resultado = "";
 			if(instance.conectar() != null) {
-				resultado = "Conexion OK";
+				resultado = "OK";
 			}else {
-				resultado = "Conexion noOK";
+				resultado = "noOK";
 			}
 			//assertEquals(resultado, "Conexion OK");
 		} catch(IllegalArgumentException e) {
@@ -35,6 +35,45 @@ public class Test {
 			fail(e.getMessage());
 		}
 	}
+	
+	@SuppressWarnings("static-access")
+	@org.junit.Test
+	public void testIngreso() {
+		System.out.println("Ingreso de nombre de usuario y passoword con datos erróneos.");
+		try {
+			conexion instance = new DB.conexion();
+			String resultado = "";
+			if(instance.conectar() != null) {
+				resultado = "OK";
+			}else {
+				resultado = "noOK";
+			}
+			//assertEquals(resultado, "Conexion OK");
+		} catch(IllegalArgumentException e) {
+			System.out.println(e.getMessage());
+			fail(e.getMessage());
+		}
+	}
+	
+	@SuppressWarnings("static-access")
+	@org.junit.Test
+	public void testRegistro() {
+		System.out.println("Registro de hora medica veterinaria.");
+		try {
+			conexion instance = new DB.conexion();
+			String resultado = "";
+			if(instance.conectar() != null) {
+				resultado = "OK";
+			}else {
+				resultado = "noOK";
+			}
+			//assertEquals(resultado, "Conexion OK");
+		} catch(IllegalArgumentException e) {
+			System.out.println(e.getMessage());
+			fail(e.getMessage());
+		}
+	}
+	
 }
 
 

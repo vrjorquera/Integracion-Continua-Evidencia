@@ -30,7 +30,8 @@
 try
 {
    // Conexion con bd
-   Class.forName("org.gjt.mm.mysql.Driver");
+   //Class.forName("com.mysql.cj.jdbc.Driver");
+   Class.forName("com.mysql.jdbc.Driver");
    Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/petsmile", "test", "test");
    if (!conexion.isClosed())
    {
@@ -45,7 +46,7 @@ try
          out.println("<tr>");
          out.println("<td>"+rs.getObject("id")+"</td>");
          out.println("<td>"+rs.getObject("idMascota")+"</td>");
-         out.println("<td>"+rs.getObject("rutDueño")+"</td>");
+         out.println("<td>"+rs.getObject("rutDueno")+"</td>");
          out.println("<td>"+rs.getObject("nombreMascota")+"</td>");
          out.println("<td>"+rs.getObject("hora")+"</td>");
          out.println("<td>"+rs.getObject("fecha")+"</td>");

@@ -29,7 +29,7 @@
 <h1>Login</h1>
 
 	<div class="nav">
-		<a href="agendar.jsp">Agendar Cita</a> | <a href="list-agenda.jsp">Lista Agenda</a> | <a href="login.jsp">Salir</a>
+		<a href="#">Inicio</a> 
 	</div>
 	
 	</br>

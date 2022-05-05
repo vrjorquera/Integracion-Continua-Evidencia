@@ -11,6 +11,7 @@ public class LoginDAO {
 	
 	String sql = "";
 	String id = "";
+	String guardar = "";
 	ResultSet rs = null;
 	
 	public String validar(String usr, String pass) throws Exception {
@@ -29,13 +30,6 @@ public class LoginDAO {
 		Usuario user = new Usuario();
 		sql = "SELECT * FROM agenda WHERE id='"+id+"'";
 		rs = cn.ejecutarConsulta(sql);
-		while(rs.next()) {
-			//user.setnombreUsuario (rs.getString("usuario"));
-			//user.setApellido(rs.getString("Apellido"));
-			//user.setRut(rs.getString("Rut"));
-			//user.setTelefono(rs.getInt("Telefono"));
-			//user.setFechaIn(rs.getString("FechaIn"));
-			}
 		cn.desconectar();
 		return user;
 	}

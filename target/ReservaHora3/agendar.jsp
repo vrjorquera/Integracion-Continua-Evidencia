@@ -23,7 +23,7 @@
 	
 	</br>
 
-	<form method="POST" action="ServletAuth">
+	<form method="post" action="ServletForm">
 	
 		<table width="350" border="1" cellpadding="4" cellspacing="0" bordercolor="#666666">
 		  <tr>
@@ -32,7 +32,7 @@
 		  </tr>
 		  <tr>
 		    <td>Rut Dueño:</td>
-		    <td><input type="text" id="rutDueño" name="txtrutDueño" placeholder="Rut Dueño" required></td>
+		    <td><input type="text" id="rutDueño" name="txtrutDueno" placeholder="Rut Dueño" required></td>
 		  </tr>
 		  <tr>
 		    <td>Nombre Mascota:</td>

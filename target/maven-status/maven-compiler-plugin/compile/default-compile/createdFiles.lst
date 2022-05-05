@@ -1,0 +1,9 @@
+DB\conexion.class
+Model\Mascota.class
+Model\Usuario.class
+Model\Dueno.class
+DAO\LoginDAO.class
+Model\Agenda.class
+test\test.class
+Controller\ServletAuth.class
+Controller\ServletForm.class

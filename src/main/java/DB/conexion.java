@@ -12,7 +12,8 @@ public class conexion {
 	public static String url ="jdbc:mysql://localhost:3306/petsmile";
 	public static String usuario ="test";
 	public static String clave ="test";
-	public static String clase = "com.mysql.cj.jdbc.Driver";
+	public static String clase = "com.mysql.jdbc.Driver";
+	//public static String clase = "com.mysql.cj.jdbc.Driver";
 	PreparedStatement ps=null;
 	
 	public static Connection conectar() {
@@ -25,6 +26,13 @@ public class conexion {
 			System.out.println(e);
 		}
 		return conexion;
+	}
+	
+	public boolean guardarConsulta(String sql) throws Exception{
+		Statement st = null;
+		st= conectar().createStatement();
+		boolean rs = st.executeUpdate(sql) > 0;
+		return rs;
 	}
 	
 	public ResultSet ejecutarConsulta(String sql) throws Exception{
